@@ -1,0 +1,77 @@
+$dark_color: #192021;
+$light_color: #d8e3e5;
+$theme_color: #daa520;
+$alt_theme_color_1: #a4bdc2;
+$alt_theme_color_2: #7da2a9;
+
+
+@mixin btn-mixin($color, $background, $border) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+
+    &:hover, &:focus, &:active, &.active, .open > &.dropdown-toggle
+    {
+        color: $color;
+        background-color: darken($background, 5%);
+        border-color: darken($border, 5%);
+    }
+
+    &:active, &.active, .open > &.dropdown-toggle
+    {
+        background-image: none;
+    }
+
+    &.disabled, &[disabled], fieldset[disabled] &
+    {
+        &, &:hover, &:focus, &:active, &.active
+        {
+            background-color: $background;
+            border-color: $border;
+        }
+    }
+
+    .badge
+    {
+        color: $background;
+        background-color: $color;
+    }
+}
+
+
+@font-face {
+  font-family: open_sans;
+  src: url("../fonts/open-sans/OpenSans-Regular.ttf");
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+html, body
+{
+    font-family: open_sans;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: $dark_color;
+    color: white !important;
+}
+
+
+header .menu-burger
+{
+    font-size: 23px;
+}
+
+.btn-yellow
+{
+    @include btn-mixin($dark_color, $theme_color, $theme_color);
+}
+
+
+
