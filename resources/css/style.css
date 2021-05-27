@@ -1,0 +1,46 @@
+@font-face {
+  font-family: open_sans;
+  src: url("../fonts/open-sans/OpenSans-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: open_sans;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #223E32;
+  color: white !important;
+}
+
+header .menu-burger {
+  font-size: 23px;
+}
+
+.btn-yellow {
+  color: #192021;
+  background-color: #daa520;
+  border-color: #daa520;
+}
+.btn-yellow:hover, .btn-yellow:focus, .btn-yellow:active, .btn-yellow.active, .open > .btn-yellow.dropdown-toggle {
+  color: #192021;
+  background-color: #c4941d;
+  border-color: #c4941d;
+}
+.btn-yellow:active, .btn-yellow.active, .open > .btn-yellow.dropdown-toggle {
+  background-image: none;
+}
+.btn-yellow.disabled, .btn-yellow.disabled:hover, .btn-yellow.disabled:focus, .btn-yellow.disabled:active, .btn-yellow.disabled.active, .btn-yellow[disabled], .btn-yellow[disabled]:hover, .btn-yellow[disabled]:focus, .btn-yellow[disabled]:active, .btn-yellow[disabled].active, fieldset[disabled] .btn-yellow, fieldset[disabled] .btn-yellow:hover, fieldset[disabled] .btn-yellow:focus, fieldset[disabled] .btn-yellow:active, fieldset[disabled] .btn-yellow.active {
+  background-color: #daa520;
+  border-color: #daa520;
+}
+.btn-yellow .badge {
+  color: #daa520;
+  background-color: #192021;
+}
+
+/*# sourceMappingURL=style.css.map */
