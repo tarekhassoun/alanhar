@@ -1,0 +1,47 @@
+/*
+ | #223E32 - green
+ | #B3DD52 - lime
+ | #B4910E - yellow
+*/
+
+/** Backgrounds **/
+.bg-green  { background-color: #223E32; }
+.bg-lime   { background-color: #B3DD52; }
+.bg-yellow { background-color: #B4910E; }
+
+/** Text **/
+.text-green  { color: #223E32 !important; }
+.text-lime   { color: #B3DD52 !important; }
+.text-yellow { color: #B4910E !important; }
+
+/** Buttons **/
+.btn-green
+{
+    background-color: #223E32;
+    color: white;
+}
+.btn-green:hover, .btn-green:active
+{
+    background-color: #385448;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-lime { background-color: #223E32; }
+.btn-lime:hover { background-color: #223E32; }
+
+.btn-yellow {
+    background-color: #B4910E;
+    color: #223E32;
+}
+.btn-yellow:hover {
+    background-color: #D0A024;
+    color: #223E32;
+}
+
+/** Link **/
+.link-green { color: #223E32; }
+.link-green:hover, .link-green:active { color: #385448; }
+
+.link-lime { color: #B3DD52; }
+.link-lime:hover, .link-lime:active { color: #91BB30; }
