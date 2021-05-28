@@ -146,11 +146,8 @@
         <h2 class="text-green">Our brands</h2>
         <div class="row mb-4">
             @foreach ($brands as $brand)
-                <a href="{{ route('brand.show', $brand->slug) }}">
-                    <div class="col-4">
-                        <img src="{{ asset('storage/' . $brand->logo) }}" />
-
-                    </div>
+                <a class="col-md-4 mb-3 justify-content-center d-flex align-items-center" href="{{ route('brand.show', $brand->slug) }}">
+                    <img class="w-75" src="{{ asset('storage/' . $brand->logo) }}" style="max-width: 200px;" />
                 </a>
             @endforeach
         </div>
