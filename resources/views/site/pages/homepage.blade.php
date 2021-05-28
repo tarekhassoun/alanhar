@@ -133,8 +133,8 @@
         <div class="row mb-4">
             @foreach ($categories as $cate)
                 @foreach ($cate->items as $category)
-                    <a class="col-md-3 text-center" href="{{ route('category.show', $category->slug) }}">
-                        <img src="{{ asset('storage/' . $category->image) }}" />
+                    <a class="col-md-3 mb-3 justify-content-center d-flex align-items-center" href="{{ route('category.show', $category->slug) }}">
+                        <img class="w-75" src="{{ asset('storage/' . $category->image) }}" style="max-width: 200px;" />
                         <br />
                         {{ $category->name }}
                     </a>
