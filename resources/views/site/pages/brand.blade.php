@@ -6,7 +6,10 @@
 
 <section class="section-content bg padding-y">
     <div class="container">
-        <img class="mx-auto d-block" src="{{ asset('storage/' . $brand->logo) }}" />
+        <img
+            class="mx-auto d-block mb-3"
+            src="{{ asset('storage/' . $brand->logo) }}"
+            style="max-height: 300px; max-width: 300px;" />
 
         <div class="row">
             @forelse ($brand->products as $product)
