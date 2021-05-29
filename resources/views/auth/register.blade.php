@@ -3,9 +3,9 @@
 @section('title', 'Register')
 
 @section('content')
-    <section class="section-pagetop bg-dark">
+    <section class="section-pagetop bg-lime">
         <div class="container clearfix">
-            <h2 class="title-page">Register</h2>
+            <h2 class="title-page text-green" style="opacity: 1;">Register</h2>
         </div>
     </section>
 
@@ -95,7 +95,7 @@
                             </div>
 
                             <div class="form-group">
-                                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                                <button type="submit" class="btn btn-lime btn-block">Sign Up</button>
                             </div>
                             <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>
                         </form>

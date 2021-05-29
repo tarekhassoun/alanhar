@@ -3,9 +3,9 @@
 @section('title', 'Login')
 
 @section('content')
-    <section class="section-pagetop bg-dark">
+    <section class="section-pagetop bg-lime">
         <div class="container clearfix">
-            <h2 class="title-page">Login</h2>
+            <h2 class="title-page text-green" style="opacity: 1;">Login</h2>
         </div>
     </section>
 
@@ -52,7 +52,7 @@
                             </div>
 
                             <div class="form-group">
-                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                                <button type="submit" class="btn btn-lime btn-block">Login</button>
                             </div>
                         </form>
                     </article>

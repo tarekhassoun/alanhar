@@ -27,14 +27,25 @@
     text-decoration: none;
 }
 
-.btn-lime { background-color: #223E32; }
-.btn-lime:hover { background-color: #223E32; }
+.btn-lime
+{
+    background-color: #B3DD52;
+    color: #223E32;
+}
+.btn-lime:hover
+{
+    background-color: #A2CC41;
+    color: #223E32;
+    text-decoration: none;
+}
 
-.btn-yellow {
+.btn-yellow
+{
     background-color: #B4910E;
     color: #223E32;
 }
-.btn-yellow:hover {
+.btn-yellow:hover
+{
     background-color: #D0A024;
     color: #223E32;
 }

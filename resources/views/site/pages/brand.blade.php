@@ -7,7 +7,7 @@
 <section class="section-content bg padding-y">
     <div class="container">
         <img
-            class="mx-auto d-block mb-3"
+            class="mx-auto d-block mb-4"
             src="{{ asset('storage/' . $brand->logo) }}"
             style="max-height: 300px; max-width: 300px;" />
 
