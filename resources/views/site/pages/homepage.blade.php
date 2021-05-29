@@ -15,17 +15,17 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="">
+                        <a href="{{ route('brand.show', 'serafino') }}">
                             <img src="{{ asset('frontend/images/carousel/1.png') }}" class="d-block w-100" />
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="">
+                        <a href="{{ route('category.show', 'coffee') }}">
                             <img src="{{ asset('frontend/images/carousel/2.png') }}" class="d-block w-100" />
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="">
+                        <a href="{{ route('brand.show', 'malto') }}">
                             <img src="{{ asset('frontend/images/carousel/3.png') }}" class="d-block w-100" />
                         </a>
                     </div>
@@ -44,7 +44,7 @@
 
 
         <h2 class="text-green">Latest products</h2>
-        <div class="row mb-4">
+        <div class="row mb-4 mt-3">
             @foreach ($best_products as $bproduct)
                 <div class="col-md-3">
                     <figure class="card card-product">
@@ -87,7 +87,7 @@
 
 
         <h2 class="text-green">Our best sellers</h2>
-        <div class="row mb-4">
+        <div class="row mb-4 mt-3">
             @foreach ($best_products as $bproduct)
                 <div class="col-md-3">
                     <figure class="card card-product">
@@ -130,12 +130,12 @@
 
 
         <h2 class="text-green">Categories</h2>
-        <div class="row mb-4">
+        <div class="row mb-4 mt-3">
             @foreach ($categories as $cate)
                 @foreach ($cate->items as $category)
                     <a class="col-md-3 mb-3 justify-content-center d-flex flex-column align-items-center" href="{{ route('category.show', $category->slug) }}">
                         <img class="w-100 mb-3" src="{{ asset('storage/' . $category->image) }}" style="max-height: 200px; max-width: 200px;" />
-                        <span class="w-100 text-center link-green">{{ $category->name }}</span>
+                        <span class="w-100 text-center link-green"><b>{{ $category->name }}</b></span>
                     </a>
                 @endforeach
             @endforeach
@@ -143,7 +143,7 @@
 
 
         <h2 class="text-green">Our brands</h2>
-        <div class="row mb-4">
+        <div class="row mb-4 mt-3">
             @foreach ($brands as $brand)
                 <a class="col-md-3 mb-3 justify-content-center d-flex align-items-center" href="{{ route('brand.show', $brand->slug) }}">
                     <img class="w-75" src="{{ asset('storage/' . $brand->logo) }}" style="max-width: 200px;" />
